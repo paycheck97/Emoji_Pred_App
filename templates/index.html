@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>LSTM emoji prediction app using Keras</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+
+          <li role="presentation" a><a href="https://www.github.com/" target="_blank">Code</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">LSTM emoji predcition app</h3>
+    </div>
+
+
+    <form method='post' target="_self" action='/' id='myForm' class="mb-3 my-5">
+    
+      <h3>Write a text!</h3>
+      <textarea type="text" placeholder="write your text here" class="form-control" name="predictionText" rows="3"></textarea>
+      <div class="mb-3 pull-right">
+        <button class="btn btn-success myButton"  type="submit predictionText" id='predict-button'>Predict</button>
+      </div>
+ 
+
+
+    </form>
+
+    <div class="jumbotron">
+
+      <p id="result">Get your prediction here!!!</p>
+      <p id="result_2"></p>
+      <p id="result_3"></p>
+    </div>
+
+    <!---   <div class="jumbotron">
+      <p id="result">Get your prediction here!!!</p>
+    </div>-->
+    <footer class="footer">
+      <p>&copy; 2020; Pacheco, Juan & Jahn, Alfredo</p>
+    </footer>
+  </div> <!-- /container -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+  <script src="http://malsup.github.com/jquery.form.js"></script>
+
+
+
+  <script>
+    // wait for the DOM to be loaded 
+    $(document).ready(function () {
+      console.log(document)
+      // bind 'myForm' and provide a simple callback function 
+      $('#myForm').ajaxForm(function (data) {
+        pred_1 = JSON.stringify(data['emoji_1'])
+        pred_2 = JSON.stringify(data['emoji_2'])
+        pred_3 = JSON.stringify(data['emoji_3'])
+        $('#result').text(' Predicted Output 1: ' + pred_1);
+        $('#result_2').text(' Predicted Output 2: ' + pred_2);
+        $('#result_3').text(' Predicted Output 3: ' + pred_3);
+      });
+    });
+  </script>
+
+  </script>
+</body>
+
+</html>
