@@ -30,6 +30,10 @@ body {
   .form {
     margin-bottom: 50px;
   }
+
+  .jumbotron {
+    height:  100px;
+  }
   /* Customize container */
   @media (min-width: 768px) {
     .container {
@@ -60,6 +64,7 @@ body {
     .form {
       width: auto;
     }
+
   }
   @media screen and (max-width: 500px) {
     .slidecontainer{
