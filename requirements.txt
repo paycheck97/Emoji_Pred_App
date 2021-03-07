@@ -1,4 +1,4 @@
-absl-py @ file:///tmp/build/80754af9/absl-py_1607439979954/work
+absl-py==0.11.0
 aiohttp @ file:///C:/ci/aiohttp_1602530153430/work
 astunparse==1.6.3
 async-timeout==3.0.1
