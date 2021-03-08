@@ -30,7 +30,7 @@ Jinja2==2.11.2
 jsonschema==3.0.2
 Keras==2.4.3
 Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.0
+Keras-Preprocessing==1.1.1
 Markdown==3.3.3
 MarkupSafe==1.1.1
 mkl-fft==1.0.6
@@ -38,7 +38,7 @@ mkl-random==1.0.1
 #mkl-service==2.3.0
 multidict==4.7.6
 murmurhash==1.0.5
-numpy==1.19.0
+numpy==1.16.0
 oauthlib==3.1.0
 opt-einsum==3.1.0
 pandas==1.1.5
@@ -77,5 +77,5 @@ Werkzeug==1.0.1
 win-inet-pton==1.1.0
 wincertstore==0.2
 wrapt==1.12.1
-yarl==1.6.0
+yarl==1.0
 zipp==3.4.0
