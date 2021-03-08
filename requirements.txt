@@ -65,7 +65,7 @@ six==1.15.0
 spacy==2.3.5
 srsly==1.0.5
 tensorboard==2.3.0
-tensorboard-plugin-wit==1.6.0
+tensorboard-plugin-wit==1.7.0
 tensorflow==2.3.0
 tensorflow-estimator==2.3.0
 termcolor==1.1.0
