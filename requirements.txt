@@ -33,8 +33,8 @@ Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.1
 Markdown==3.3.3
 MarkupSafe==1.1.1
-mkl-fft==1.0.6
-mkl-random==1.0.1
+#mkl-fft==1.0.6
+#mkl-random==1.0.1
 #mkl-service==2.3.0
 multidict==4.7.6
 murmurhash==1.0.5
