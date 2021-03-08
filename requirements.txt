@@ -30,7 +30,7 @@ Jinja2==2.11.2
 jsonschema==3.0.2
 Keras==2.4.3
 Keras-Applications==1.0.8
-Keras-Preprocessing==1.2.0
+Keras-Preprocessing==1.1.0
 Markdown==3.3.3
 MarkupSafe==1.1.1
 mkl-fft==1.0.6
